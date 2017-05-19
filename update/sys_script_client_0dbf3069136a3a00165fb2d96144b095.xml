@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description>This is on the parent table and is intended to set default behavior across all sub tables</description>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>MTH - Task - onLoad</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	g_form.setReadOnly('parent_data_request', true);
+	g_form.setReadOnly('parent_data_request.call_back_number', true);
+	g_form.setReadOnly('parent_data_request.opened_for', true);
+	g_form.setReadOnly('parent_data_request.opened_for.location', true);
+	g_form.setReadOnly('parent_data_request.opened_for.manager', true);
+	g_form.setReadOnly('parent_data_request.opened_for.title', true);
+	g_form.setReadOnly('parent_data_request.opened_for.u_region', true);
+	g_form.setReadOnly('state', true);
+	g_form.setReadOnly('approval', true);
+	g_form.setDisplay('task_sub_type', false);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-05 09:08:52</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0dbf3069136a3a00165fb2d96144b095</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>MTH - Task - onLoad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>sys_script_client_0dbf3069136a3a00165fb2d96144b095</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-15 21:33:59</sys_updated_on>
+        <table>x_tbn_mth_task</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

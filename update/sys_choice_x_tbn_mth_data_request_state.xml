@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_tbn_mth_data_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint>Service order initiator is not done describing the work</hint>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>x_tbn_mth_data_request</name>
+            <sequence>0</sequence>
+            <sys_created_by>snakaupisch</sys_created_by>
+            <sys_created_on>2017-05-05 00:16:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6be5431113663a00165fb2d96144b087</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>snakaupisch</sys_updated_by>
+            <sys_updated_on>2017-05-05 00:16:50</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Awaiting Assignment</label>
+            <language>en</language>
+            <name>x_tbn_mth_data_request</name>
+            <sequence>1</sequence>
+            <sys_created_by>snakaupisch</sys_created_by>
+            <sys_created_on>2017-05-05 00:16:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2fe5431113663a00165fb2d96144b089</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>snakaupisch</sys_updated_by>
+            <sys_updated_on>2017-05-05 00:16:50</sys_updated_on>
+            <value>-1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint>Work has started</hint>
+            <inactive>false</inactive>
+            <label>Work In Progress</label>
+            <language>en</language>
+            <name>x_tbn_mth_data_request</name>
+            <sequence>2</sequence>
+            <sys_created_by>snakaupisch</sys_created_by>
+            <sys_created_on>2017-05-05 00:16:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6be5431113663a00165fb2d96144b08b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>snakaupisch</sys_updated_by>
+            <sys_updated_on>2017-05-05 00:16:50</sys_updated_on>
+            <value>18</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint>Work has been completed to specification</hint>
+            <inactive>false</inactive>
+            <label>Closed Complete</label>
+            <language>en</language>
+            <name>x_tbn_mth_data_request</name>
+            <sequence>3</sequence>
+            <sys_created_by>snakaupisch</sys_created_by>
+            <sys_created_on>2017-05-05 00:16:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>27e5c31113663a00165fb2d96144b034</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>snakaupisch</sys_updated_by>
+            <sys_updated_on>2017-05-05 00:16:50</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint>Work could not be completed as specified</hint>
+            <inactive>false</inactive>
+            <label>Closed Incomplete</label>
+            <language>en</language>
+            <name>x_tbn_mth_data_request</name>
+            <sequence>4</sequence>
+            <sys_created_by>snakaupisch</sys_created_by>
+            <sys_created_on>2017-05-05 00:16:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>63e5c31113663a00165fb2d96144b036</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>snakaupisch</sys_updated_by>
+            <sys_updated_on>2017-05-05 00:16:50</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_tbn_mth_data_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>snakaupisch</sys_created_by>
+            <sys_created_on>2017-05-05 00:16:50</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>2be5431113663a00165fb2d96144b089</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+            <sys_update_name>sys_choice_x_tbn_mth_data_request_state</sys_update_name>
+            <sys_updated_by>chris.lo@snc</sys_updated_by>
+            <sys_updated_on>2017-05-17 16:27:39</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

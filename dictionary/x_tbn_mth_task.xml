@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" extends="sm_task" label="Task" max_length="40" name="x_tbn_mth_task" type="collection">
+        <element label="Parent Request" max_length="32" name="parent_request" reference="x_tbn_mth_req" type="reference"/>
+        <element label="Region" max_length="32" name="region" reference="cmn_location" reference_qual="u_region=true^EQ" reference_qual_condition="u_region=true^EQ" type="reference"/>
+        <element choice="1" label="Task Sub Type" max_length="40" name="task_sub_type" type="choice">
+            <choice/>
+        </element>
+    </element>
+</database>

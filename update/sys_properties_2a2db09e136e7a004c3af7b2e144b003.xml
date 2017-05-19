@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_tbn_mth.group.sales_support</name>
+        <read_roles/>
+        <suffix>group.sales_support</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-07 16:53:49</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>2a2db09e136e7a004c3af7b2e144b003</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tbn_mth.group.sales_support</sys_name>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>sys_properties_2a2db09e136e7a004c3af7b2e144b003</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-07 16:53:49</sys_updated_on>
+        <type>string</type>
+        <value>a553aa14133c3200d14d75c36144b050</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=2a2db09e136e7a004c3af7b2e144b003"/>
+</record_update>

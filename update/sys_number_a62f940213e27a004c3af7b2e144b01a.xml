@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_tbn_mth_facilities_request">x_tbn_mth_facilities_request</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>SRFAC</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-06 20:03:40</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a62f940213e27a004c3af7b2e144b01a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SRFAC</sys_name>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>sys_number_a62f940213e27a004c3af7b2e144b01a</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-06 20:03:40</sys_updated_on>
+    </sys_number>
+</record_update>

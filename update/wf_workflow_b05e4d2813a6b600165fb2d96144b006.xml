@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["4c1d46f41362f600165fb2d96144b025"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description>Not really needed, but creating for conformity and in case they decide to do more with the workflow.</description>
+        <expected_sequences>481d46f41362f600165fb2d96144b023,041d46f41362f600165fb2d96144b021,801d46f41362f600165fb2d96144b01f,cc1d46f41362f600165fb2d96144b026,a82d86f41362f600165fb2d96144b06e,4c1d46f41362f600165fb2d96144b025</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>481d46f41362f600165fb2d96144b023,041d46f41362f600165fb2d96144b021,801d46f41362f600165fb2d96144b01f,cc1d46f41362f600165fb2d96144b026,a82d86f41362f600165fb2d96144b06e,4c1d46f41362f600165fb2d96144b025|481d46f41362f600165fb2d96144b023,041d46f41362f600165fb2d96144b021,cc1d46f41362f600165fb2d96144b026,a82d86f41362f600165fb2d96144b06e,4c1d46f41362f600165fb2d96144b025</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>MTH - eDisc Request</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">481d46f41362f600165fb2d96144b023</start>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>0c1d46f41362f600165fb2d96144b01c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_updated_by>josh.calera@meritagehomes.com</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:54:59</sys_updated_on>
+        <table>x_tbn_mth_edisc_req</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="MTH - eDisc Request">b05e4d2813a6b600165fb2d96144b006</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Not really needed, but creating for conformity and in case they decide to do more with the workflow.</description>
+        <name>MTH - eDisc Request</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-02 07:38:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b05e4d2813a6b600165fb2d96144b006</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>MTH - eDisc Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>wf_workflow_b05e4d2813a6b600165fb2d96144b006</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-02 07:44:03</sys_updated_on>
+        <table>x_tbn_mth_edisc_req</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>481d46f41362f600165fb2d96144b023</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="MTH - eDisc Request">0c1d46f41362f600165fb2d96144b01c</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=481d46f41362f600165fb2d96144b023"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">481d46f41362f600165fb2d96144b023</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>841d46f41362f600165fb2d96144b024</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Change Priority</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>801d46f41362f600165fb2d96144b01f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:52:55</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="MTH - eDisc Request">0c1d46f41362f600165fb2d96144b01c</workflow_version>
+        <x>322</x>
+        <y>101</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=801d46f41362f600165fb2d96144b01f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>801d46f41362f600165fb2d96144b01f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>4c1d46f41362f600165fb2d96144b01f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <value>priority=2^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>801d46f41362f600165fb2d96144b01f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>4c1d46f41362f600165fb2d96144b01f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <value>priority=2^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Change Priority">801d46f41362f600165fb2d96144b01f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>c41d46f41362f600165fb2d96144b020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>4c1d46f41362f600165fb2d96144b025</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:53:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="MTH - eDisc Request">0c1d46f41362f600165fb2d96144b01c</workflow_version>
+        <x>509</x>
+        <y>371</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4c1d46f41362f600165fb2d96144b025"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>is Due Date &lt; 7 days?</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>041d46f41362f600165fb2d96144b021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="MTH - eDisc Request">0c1d46f41362f600165fb2d96144b01c</workflow_version>
+        <x>76</x>
+        <y>130</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=041d46f41362f600165fb2d96144b021"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>041d46f41362f600165fb2d96144b021</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>0c1d46f41362f600165fb2d96144b021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <value>due_dateRELATIVELE@dayofweek@ahead@7^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>041d46f41362f600165fb2d96144b021</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>401d46f41362f600165fb2d96144b022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>041d46f41362f600165fb2d96144b021</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>841d46f41362f600165fb2d96144b022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>041d46f41362f600165fb2d96144b021</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>0c1d46f41362f600165fb2d96144b021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <value>due_dateRELATIVELE@dayofweek@ahead@7^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>041d46f41362f600165fb2d96144b021</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>401d46f41362f600165fb2d96144b022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>041d46f41362f600165fb2d96144b021</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>841d46f41362f600165fb2d96144b022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="is Due Date &lt; 7 days?">041d46f41362f600165fb2d96144b021</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>001d46f41362f600165fb2d96144b023</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="is Due Date &lt; 7 days?">041d46f41362f600165fb2d96144b021</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>c01d46f41362f600165fb2d96144b023</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set Approved &amp; Awaiting Assignment</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>cc1d46f41362f600165fb2d96144b026</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:52:53</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="MTH - eDisc Request">0c1d46f41362f600165fb2d96144b01c</workflow_version>
+        <x>328</x>
+        <y>175</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=cc1d46f41362f600165fb2d96144b026"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc1d46f41362f600165fb2d96144b026</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>401d46f41362f600165fb2d96144b027</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:52:29</sys_updated_on>
+        <value>approval=approved^state=-1^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cc1d46f41362f600165fb2d96144b026</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>401d46f41362f600165fb2d96144b027</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:52:29</sys_updated_on>
+        <value>approval=approved^state=-1^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set Approved &amp; Awaiting Assignment">cc1d46f41362f600165fb2d96144b026</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>c41d46f41362f600165fb2d96144b027</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set Assignment Group</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:52:12</sys_created_on>
+        <sys_id>a82d86f41362f600165fb2d96144b06e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:52:59</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="MTH - eDisc Request">0c1d46f41362f600165fb2d96144b01c</workflow_version>
+        <x>332</x>
+        <y>261</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a82d86f41362f600165fb2d96144b06e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a82d86f41362f600165fb2d96144b06e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:52:12</sys_created_on>
+        <sys_id>2b3d86f41362f600165fb2d96144b086</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:52:12</sys_updated_on>
+        <value>current.assignment_group = gs.getProperty('x_tbn_mth.group.infrastructure');</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a82d86f41362f600165fb2d96144b06e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:52:12</sys_created_on>
+        <sys_id>2b3d86f41362f600165fb2d96144b086</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:52:12</sys_updated_on>
+        <value>current.assignment_group = gs.getProperty('x_tbn_mth.group.infrastructure');</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set Assignment Group">a82d86f41362f600165fb2d96144b06e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:52:12</sys_created_on>
+        <sys_id>ef3d86f41362f600165fb2d96144b086</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:52:12</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">841d46f41362f600165fb2d96144b024</condition>
+        <from display_value="Begin">481d46f41362f600165fb2d96144b023</from>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>001d46f41362f600165fb2d96144b080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <to display_value="is Due Date &lt; 7 days?">041d46f41362f600165fb2d96144b021</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">c01d46f41362f600165fb2d96144b023</condition>
+        <from display_value="is Due Date &lt; 7 days?">041d46f41362f600165fb2d96144b021</from>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>441d46f41362f600165fb2d96144b080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <to display_value="Change Priority">801d46f41362f600165fb2d96144b01f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">001d46f41362f600165fb2d96144b023</condition>
+        <from display_value="is Due Date &lt; 7 days?">041d46f41362f600165fb2d96144b021</from>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>481d46f41362f600165fb2d96144b080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <to display_value="Set Approved &amp; Awaiting Assignment">cc1d46f41362f600165fb2d96144b026</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c41d46f41362f600165fb2d96144b020</condition>
+        <from display_value="Change Priority">801d46f41362f600165fb2d96144b01f</from>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>4c1d46f41362f600165fb2d96144b080</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:35</sys_updated_on>
+        <to display_value="Set Approved &amp; Awaiting Assignment">cc1d46f41362f600165fb2d96144b026</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c41d46f41362f600165fb2d96144b027</condition>
+        <from display_value="Set Approved &amp; Awaiting Assignment">cc1d46f41362f600165fb2d96144b026</from>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:52:35</sys_created_on>
+        <sys_id>9d5d46f41362f600165fb2d96144b09b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:52:35</sys_updated_on>
+        <to display_value="Set Assignment Group">a82d86f41362f600165fb2d96144b06e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">ef3d86f41362f600165fb2d96144b086</condition>
+        <from display_value="Set Assignment Group">a82d86f41362f600165fb2d96144b06e</from>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:53:02</sys_created_on>
+        <sys_id>fb6d86f41362f600165fb2d96144b047</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:53:02</sys_updated_on>
+        <to display_value="End">4c1d46f41362f600165fb2d96144b025</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 06:51:25</sys_created_on>
+        <sys_id>001d46f41362f600165fb2d96144b01d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 06:51:25</sys_updated_on>
+        <workflow_version display_value="MTH - eDisc Request">0c1d46f41362f600165fb2d96144b01c</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=b05e4d2813a6b600165fb2d96144b006^sys_id!=0c1d46f41362f600165fb2d96144b01c">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

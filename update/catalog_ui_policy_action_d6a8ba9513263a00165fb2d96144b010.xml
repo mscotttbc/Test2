@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Data Request">789fae9d13e23a00165fb2d96144b093</catalog_item>
+        <catalog_variable>IO:499f26dd13e23a00165fb2d96144b06f</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-04 23:19:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d6a8ba9513263a00165fb2d96144b010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>system_affected</sys_name>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_d6a8ba9513263a00165fb2d96144b010</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-04 23:19:08</sys_updated_on>
+        <table/>
+        <ui_policy display_value="MTH - Data - Show SQL">a0987a9513263a00165fb2d96144b005</ui_policy>
+        <variable>system_affected</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

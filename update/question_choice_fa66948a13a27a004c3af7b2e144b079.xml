@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <misc>0</misc>
+        <order>1</order>
+        <question display_value="Request type">3e66948a13a27a004c3af7b2e144b075</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-06 19:25:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>fa66948a13a27a004c3af7b2e144b079</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sales Office Setup</sys_name>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>question_choice_fa66948a13a27a004c3af7b2e144b079</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-06 19:25:28</sys_updated_on>
+        <text>Sales Office Setup</text>
+        <value>Sales Office Setup</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=fa66948a13a27a004c3af7b2e144b079"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>fa66948a13a27a004c3af7b2e144b079</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-06 19:25:28</sys_created_on>
+        <sys_id>f266948a13a27a004c3af7b2e144b07b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-06 19:25:28</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>fa66948a13a27a004c3af7b2e144b079</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-06 19:25:28</sys_created_on>
+        <sys_id>ba66948a13a27a004c3af7b2e144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-06 19:25:28</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>MTH - Req - onLoad, state is closed</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	var reqStates = JSON.parse(g_scratchpad.requestStates);
+	var state = g_form.getValue('state');
+	if (state == reqStates.CLOSE_COMPLETE || state == reqStates.CLOSE_INCOMPLETE) {
+		g_form.setReadOnly('assigned_to', true);
+		g_form.setReadOnly('assignment_group', true);
+		g_form.setReadOnly('close_notes', true);
+		g_form.setReadOnly('description', true);
+		g_form.setReadOnly('short_description', true);
+		g_form.setReadOnly('priority', true);
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-05 05:41:01</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e01fc06513e63a00165fb2d96144b01e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>MTH - Req - onLoad, state is closed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>sys_script_client_e01fc06513e63a00165fb2d96144b01e</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-15 21:35:21</sys_updated_on>
+        <table>x_tbn_mth_req</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

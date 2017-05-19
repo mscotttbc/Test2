@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" audit="true" extends="x_tbn_mth_req" label="Facilities Request" max_length="40" name="x_tbn_mth_facilities_request" type="collection">
+        <element label="Community Name" max_length="100" name="community_name" type="string"/>
+        <element label="Head Count" max_length="4000" name="head_count" type="string"/>
+        <element label="Point of Contact" max_length="32" name="point_of_contact" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_tbn_mth_req</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>To track the status of your request, please check: ${URI_REF}</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>mth.req.created</name>
+        <sms_alternate/>
+        <subject>${sys_class_name} ${number} has been created</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-04-28 20:52:47</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>658ddfd713def200165fb2d96144b0fa</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>mth.req.created</sys_name>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>sysevent_email_template_658ddfd713def200165fb2d96144b0fa</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-18 03:42:55</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

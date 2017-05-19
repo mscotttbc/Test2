@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="task_sub_type" table="x_tbn_mth_data_task" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Restoration</label>
+            <language>en</language>
+            <name>x_tbn_mth_data_task</name>
+            <sequence>0</sequence>
+            <sys_created_by>snakaupisch</sys_created_by>
+            <sys_created_on>2017-05-05 07:03:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>570368a1132a3a00165fb2d96144b038</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>snakaupisch</sys_updated_by>
+            <sys_updated_on>2017-05-05 07:03:42</sys_updated_on>
+            <value>File Restoration</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Email / Vault Restoration</label>
+            <language>en</language>
+            <name>x_tbn_mth_data_task</name>
+            <sequence>1</sequence>
+            <sys_created_by>snakaupisch</sys_created_by>
+            <sys_created_on>2017-05-05 07:03:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>970368a1132a3a00165fb2d96144b03a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>snakaupisch</sys_updated_by>
+            <sys_updated_on>2017-05-05 07:03:42</sys_updated_on>
+            <value>Email / Vault Restoration</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SQL Request</label>
+            <language>en</language>
+            <name>x_tbn_mth_data_task</name>
+            <sequence>2</sequence>
+            <sys_created_by>snakaupisch</sys_created_by>
+            <sys_created_on>2017-05-05 07:03:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>170368a1132a3a00165fb2d96144b03c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>snakaupisch</sys_updated_by>
+            <sys_updated_on>2017-05-05 07:03:42</sys_updated_on>
+            <value>SQL Request</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>task_sub_type</element>
+            <name>x_tbn_mth_data_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>snakaupisch</sys_created_by>
+            <sys_created_on>2017-05-05 07:03:42</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>530368a1132a3a00165fb2d96144b03a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>task_sub_type</sys_name>
+            <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+            <sys_update_name>sys_choice_x_tbn_mth_data_task_task_sub_type</sys_update_name>
+            <sys_updated_by>chris.lo@snc</sys_updated_by>
+            <sys_updated_on>2017-05-17 16:27:41</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

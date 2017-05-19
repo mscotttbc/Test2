@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_tbn_mth.MTHRequestUtils</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>MTHRequestUtils</name>
+        <script><![CDATA[var MTHRequestUtils = Class.create();
+
+MTHRequestUtils.DRAFT = 1;
+MTHRequestUtils.APPROVAL = 11;
+MTHRequestUtils.ASSIGN = -1;
+MTHRequestUtils.WIP = 18;
+MTHRequestUtils.CLOSE_COMPLETE = 3;
+MTHRequestUtils.CLOSE_INCOMPLETE = 4;
+
+MTHRequestUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getTasks: function(parentID) {
+        var gr = new GlideRecord('x_tbn_mth_task');
+        gr.addQuery('parent_request', parentID);
+        gr.query();
+        return gr;
+    },
+
+    // Return -1 if incomplete otherwise % success with 0 = incomplete on all and 1 = complete on all
+    getTaskSuccess: function(parentID) {
+        var gr = this.getTasks(parentID);
+
+        var incomplete = false;
+        var count = 0;
+        var complete = 0;
+        while (gr.next()) {
+            count++;
+            if (gr.state == MTHTaskUtils.CLOSE_COMPLETE)
+                complete++;
+            else if (gr.state == MTHTaskUtils.CLOSE_INCOMPLETE)
+            ; // do nothing
+            else
+                incomplete = true;
+        }
+
+        if (incomplete)
+            return parseFloat(-1);
+        else
+            return (Math.round(complete * 100.0 / count) / 100);
+    },
+
+    compareDates: function(_date1, _date2) {
+        var date1 = new GlideDateTime(_date1);
+        var date2 = new GlideDateTime(_date2);
+        return date1.compareTo(date2);
+    },
+
+    compareDatesAJAX: function() {
+        return this.compareDates(this.getParameter('sysparm_date1'), this.getParameter('sysparm_date2'));
+    },
+
+    getLocationsByRegion: function(regionID) {
+
+        var gr = new GlideRecord('cmn_location');
+        gr.addQuery('parent', regionID);
+        gr.query();
+        var locations = [];
+        while (gr.next()) {
+            var location = {};
+            location.sys_id = gr.sys_id.toString();
+            location.label = gr.name.toString();
+            locations.push(location);
+        }
+
+        return locations;
+
+    },
+
+    getLocationsByRegionAJAX: function() {
+        return (new global.JSON().encode(this.getLocationsByRegion(this.getParameter('sysparm_id'))));
+    },
+
+    getBusinessDaysFromNow: function(days) {
+        var now = new GlideDateTime(new GlideDateTime().getDisplayValue());
+        var dur = new GlideDuration(1000 * 60 * 60 * 8 * days);
+        var end = new GlideDateTime();
+
+        var schedule = new GlideSchedule(gs.getProperty('x_tbn_mth.schedule.default'));
+        end.setValue(schedule.add(now, dur));
+
+        return end.getDisplayValue();
+    },
+
+    getBusinessDaysFromNowAJAX: function() {
+        return this.getBusinessDaysFromNow(this.getParameter('sysparm_days'));
+    },
+
+    setAssignedTo: function(record, _userID /*optional*/ ) {
+        var userID = _userID || gs.getUserID();
+
+        if (record.assigned_to == '') {
+            if (!new MTHRequestUtils().isInGroup(record, userID))
+                record.assignment_group = '';
+
+            record.assigned_to = userID;
+        }
+    },
+
+    /* We need to ensure they are a member of the assignment group as we will auto assign
+     *  them to the assign_to if it's blank. Plus we don't want others editing the requests
+     */
+    isInGroup: function(record, _userID /* optional */ ) {
+        var userID = _userID || gs.getUserID();
+
+        // if there is a group assigned, see if they are in it
+        if (record.assignment_group != '') {
+            var gr = new GlideRecord('sys_user_grmember');
+            gr.addQuery('user', userID);
+            gr.addQuery('group', record.assignment_group);
+            gr.query();
+            return gr.hasNext();
+        }
+        return true;
+    },
+
+    hasProperRoles: function() {
+        return ((gs.hasRole('itil') && gs.hasRole('x_tbn_mth.user')) || gs.hasRole('admin'));
+    },
+
+    showCloseComplete: function(record) {
+        if (!this.isInGroup(record))
+            return false;
+
+        if (this.hasProperRoles())
+            return (record.state == MTHRequestUtils.WIP);
+
+        return false;
+    },
+
+    showCloseIncomplete: function(record) {
+        if (!this.isInGroup(record))
+            return false;
+
+        if (this.hasProperRoles())
+            return (record.state == MTHRequestUtils.ASSIGN || record.state == MTHRequestUtils.WIP);
+
+        return false;
+    },
+
+    showStartWork: function(record) {
+        if (!this.isInGroup(record))
+            return false;
+
+        if (this.hasProperRoles())
+            return (record.state == MTHRequestUtils.ASSIGN);
+
+        return false;
+    },
+
+    type: 'MTHRequestUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-04-27 17:22:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>044065c71352f200165fb2d96144b02e</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>MTHRequestUtils</sys_name>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>sys_script_include_044065c71352f200165fb2d96144b02e</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-18 00:53:52</sys_updated_on>
+    </sys_script_include>
+</record_update>

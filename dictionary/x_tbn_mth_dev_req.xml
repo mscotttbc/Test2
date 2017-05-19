@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" audit="true" extends="x_tbn_mth_req" label="Dev Request" max_length="40" name="x_tbn_mth_dev_req" sizeclass="1" type="collection">
+        <element choice="1" label="Application" mandatory="true" max_length="40" name="application" type="choice">
+            <choice>
+                <element label="Business Objects/Reporting" value="Business Objects/Reporting"/>
+                <element label="Buyer Portal" value="Buyer Portal"/>
+                <element label="Filenet" value="Filenet"/>
+                <element label="Hyphen" value="Hyphen"/>
+                <element label="Integration" value="Integration"/>
+                <element label="Salesforce" value="Salesforce"/>
+                <element label="Unsure" value="Unsure"/>
+                <element label="Web Development" value="Web Development"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <collection>x_tbn_mth_req</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <description>Notifications don't inherit, but you can get around this using events. Create an event on the parent table, then in a business rule call that event. But prior to calling it, select the parent table for the record in question. This will send the 'parent' into the notification and thus allow you to send a notificaiton. However, you lose the ability to customize that email to the individual table. I'm only using this for requests opened and closed as those are standard. Any changes would require conditions to be used to prevent this from being called. A bit kludgy, but less code and more standardization across emails.</description>
+        <event_name>x_tbn_mth.req_closed_complete</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html/>
+        <message_list/>
+        <message_text/>
+        <name>MTH - Req - Closed Complete</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>opened_by,opened_for</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject/>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-04-30 05:31:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bfed9633139e3600165fb2d96144b0ee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>MTH - Req - Closed Complete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>sysevent_email_action_bfed9633139e3600165fb2d96144b0ee</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-18 03:25:04</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="mth.req.closed_complete">307d9633139e3600165fb2d96144b0ec</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

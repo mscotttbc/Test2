@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" extends="sm_order" label="Request" max_length="40" name="x_tbn_mth_req" sizeclass="2" type="collection">
+        <element label="Call Back Number" max_length="40" name="call_back_number" type="string"/>
+        <element label="Region" mandatory="true" max_length="32" name="region" reference="cmn_location" reference_qual="u_region=true^EQ" reference_qual_condition="u_region=true^EQ" type="reference"/>
+    </element>
+</database>

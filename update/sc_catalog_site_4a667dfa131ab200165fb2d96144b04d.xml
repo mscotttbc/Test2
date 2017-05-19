@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_catalog_site">
+    <sc_catalog_site action="INSERT_OR_UPDATE">
+        <cms_continue_shopping/>
+        <cms_home/>
+        <cms_search/>
+        <content_site display_value="Employee Self-Service">5767a89fc0a8016b012f6aecb0c816a4</content_site>
+        <sc_catalog display_value="Meritage Request Catalog">78bf61b213d6b200165fb2d96144b016</sc_catalog>
+        <sys_class_name>sc_catalog_site</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-04-27 00:04:35</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4a667dfa131ab200165fb2d96144b04d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Self-Service.Meritage Service Requests</sys_name>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>sc_catalog_site_4a667dfa131ab200165fb2d96144b04d</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-04-27 00:04:35</sys_updated_on>
+    </sc_catalog_site>
+</record_update>

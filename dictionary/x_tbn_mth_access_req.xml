@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" extends="x_tbn_mth_req" label="Access Request" max_length="40" name="x_tbn_mth_access_req" type="collection">
+        <element label="Folder Location" max_length="1000" name="folder_location" type="string"/>
+        <element label="Mailbox" max_length="1000" name="mailbox" type="string"/>
+        <element label="user bo" max_length="32" name="user_bo" reference="sys_user" type="reference"/>
+        <element label="user bpc" max_length="32" name="user_bpc" reference="sys_user" type="reference"/>
+        <element label="User e1" max_length="32" name="user_e1" reference="sys_user" type="reference"/>
+        <element label="user hyphen" max_length="32" name="user_hyphen" reference="sys_user" type="reference"/>
+        <element label="user mcm" max_length="32" name="user_mcm" reference="sys_user" type="reference"/>
+        <element label="user mimic" max_length="32" name="user_mimic" reference="sys_user" type="reference"/>
+    </element>
+</database>

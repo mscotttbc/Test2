@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description>See Request Created notifcation for more info</description>
+        <event_name>x_tbn_mth.task_assigned_to_changes</event_name>
+        <fired_by>Business rules that inherit from task.</fired_by>
+        <queue/>
+        <suffix>task_assigned_to_changes</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-15 19:57:45</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>e7147270133afe00165fb2d96144b0e1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_tbn_mth.task_assigned_to_changes</sys_name>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>sysevent_register_e7147270133afe00165fb2d96144b0e1</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-15 19:58:30</sys_updated_on>
+        <table>x_tbn_mth_task</table>
+    </sysevent_register>
+</record_update>

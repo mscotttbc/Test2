@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" audit="true" extends="x_tbn_mth_req" label="eDiscovery Request" max_length="40" name="x_tbn_mth_edisc_req" sizeclass="11" type="collection">
+        <element label="End Search" max_length="40" name="end_search" type="glide_date_time"/>
+        <element label="Person" max_length="32" name="person" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Start Search" max_length="40" name="start_search" type="glide_date_time"/>
+        <element label="Subject" max_length="1000" name="subject" type="string"/>
+    </element>
+</database>

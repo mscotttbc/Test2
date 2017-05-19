@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>This is the main schedule MTH uses. This is needed to calculate business days from now (MTHRequestUtils).</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_tbn_mth.schedule.default</name>
+        <read_roles/>
+        <suffix>schedule.default</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>snakaupisch</sys_created_by>
+        <sys_created_on>2017-05-03 07:11:59</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6981d6b81362f600165fb2d96144b079</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tbn_mth.schedule.default</sys_name>
+        <sys_package display_value="MTH" source="x_tbn_mth">4627509613527200165fb2d96144b0e0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="MTH">4627509613527200165fb2d96144b0e0</sys_scope>
+        <sys_update_name>sys_properties_6981d6b81362f600165fb2d96144b079</sys_update_name>
+        <sys_updated_by>snakaupisch</sys_updated_by>
+        <sys_updated_on>2017-05-03 07:11:59</sys_updated_on>
+        <type>string</type>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=6981d6b81362f600165fb2d96144b079"/>
+</record_update>
